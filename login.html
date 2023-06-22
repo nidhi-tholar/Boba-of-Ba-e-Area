@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: #e6dddd;
+            padding: 20px;
+            border-radius: 5px;
+
+            /* position: absolute;
+            right: 50%;
+            transform: translate(50% , 50%); */
+
+            margin: auto;
+            position: relative;
+            top: 100px;
+        }
+
+        input {
+            margin: 5px 0;
+            padding: 15px 25px;
+            width: 100%;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        .fields {
+            margin-top: 20px;
+        }
+
+        .submit-btn{
+            margin-top: 40px;
+            background-color: rgb(25, 173, 25);
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Login</h1>
+
+        <form style="margin-top: 40px; font-size: 20px;" onsubmit="login(event)">
+            <div class="fields">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="fields">
+                <label for="password">Password</label> 
+                <input type="password" id="password" name="password">
+            </div>
+
+            <input class="submit-btn" type="submit" value="Login">
+
+        </form>
+
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
