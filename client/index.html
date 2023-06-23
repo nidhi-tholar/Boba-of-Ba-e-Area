@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba Search</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="navBar">
+        <img class="logo" src="/boba_img.png">
+        <a class="navItems appName" href="/client/index.html">Boba Search</a>
+        <a class="navItems login-btn" href="login.html"> Log In</a>
+    </div>
+
+    <div class="container">
+        <form>
+            <select id="location" name="location" required>
+                <option value="" label="Select a location"></option>
+                <option value="San Jose">San Jose</option>
+                <option value="San Fransisco">San Fransisco</option>
+                <option value="Mountain View">Mountain View</option>
+            </select>
+        
+            <input type="submit" value="Search" class="search-btn" onClick="getData(event)">
+        </form>
+    
+        <div id="displayResults">
+            
+        </div>
+    </div>
+
+    
+
+
+    <script src="home.js"></script>
+</body>
+</html>

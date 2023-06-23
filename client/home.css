@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+a.navItems {
+    float: left;
+    color: #f2f2f2;
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+    right: 25px;
+}
+.appName{
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+.login-btn {
+    float:right !important;
+    font-size: 23px;
+}
+
+.login-btn:hover {
+    background-color: #d9a2a2;
+    color: black;
+    cursor: pointer;
+}
+
+.navBar {
+    overflow: hidden;
+    background-color: #333;
+    line-height:40px;
+    height: 80px;
+}
+
+.logo {
+    float: left;
+    position: relative;
+    top: 6px;
+    left: 6px;
+    width: 65px;
+    object-fit: cover;
+}
+
+.container{
+    margin: 20px;
+}
+
+.search-btn {
+    margin-left: 12px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+select {
+    width: 230px;
+    padding: 10px 15px;
+}
+
+select[error] {
+    border: 3px solid red;
+}
+
+label, select, .search-btn{
+    display: inline-block;
+    height: 50px;
+    font-size: 18px;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.business{
+    margin-top: 30px;
+    padding: 10px;
+    border : 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.businessImage{
+    height: 200px;
+    width: 200px;
+}
+
+.businessDetails{
+    margin-left: 35px;
+    font-size: 20px;
+}
