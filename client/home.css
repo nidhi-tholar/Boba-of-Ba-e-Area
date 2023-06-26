@@ -1,25 +1,53 @@
 * {
     box-sizing: border-box;
 }
-a.navItems {
-    float: left;
+
+body {
+    height: 100%;
+    margin: 0;
+    padding:0;
+}
+
+.navBar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    position: sticky;
+    top:0;
+}
+
+.navbar, .appName a, .login-btn{
     color: #f2f2f2;
     text-decoration: none;
-    position: relative;
-    top: 20px;
-    right: 25px;
+    font-size: 23px;
 }
-.appName{
-    font-size: 25px;
+
+.leftItems {
+    display: flex;
+}
+
+.logo img{
+    width: 55px;
+    object-fit: cover;
+}
+
+.appName {
+    display: flex;
+    justify-content: center;
+}
+
+.appName a{
     font-weight: bold;
-    position: relative;
-    top: 20px;
-    left: 10px;
+    display: block;
+    height: 100%;
+    padding: 15px 0px;
 }
 
 .login-btn {
-    float:right !important;
-    font-size: 23px;
+    display: block;
+    height: 100%;
+    padding: 15px;
 }
 
 .login-btn:hover {
@@ -28,24 +56,16 @@ a.navItems {
     cursor: pointer;
 }
 
-.navBar {
-    overflow: hidden;
-    background-color: #333;
-    line-height:40px;
-    height: 80px;
-}
-
-.logo {
-    float: left;
-    position: relative;
-    top: 6px;
-    left: 6px;
-    width: 65px;
-    object-fit: cover;
-}
+/* Nav bar ends here ---------------------*/
 
 .container{
     margin: 20px;
+}
+
+select, .search-btn{
+    display: inline-block;
+    height: 50px;
+    font-size: 18px;
 }
 
 .search-btn {
@@ -64,12 +84,6 @@ select {
 
 select[error] {
     border: 3px solid red;
-}
-
-label, select, .search-btn{
-    display: inline-block;
-    height: 50px;
-    font-size: 18px;
 }
 
 .container {
