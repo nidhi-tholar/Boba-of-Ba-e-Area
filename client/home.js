@@ -1,3 +1,16 @@
+
+function updateLoginButton() {
+  const logElement = document.querySelector(".login-logout-btn");
+  let email = localStorage.getItem("email");
+  if ( email=== null) {
+    logElement.textContent = "Log In";
+  } else {
+    logElement.textContent = email;
+  }
+}
+document.addEventListener("DOMContentLoaded", updateLoginButton);
+
+
 const getBusinessData = (url) => {
 
     return fetch(url)
