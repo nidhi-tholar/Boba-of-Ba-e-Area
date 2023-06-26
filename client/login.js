@@ -8,5 +8,5 @@ login = (e) => {
     let password = document.getElementById('password').value;
     alert( email);
     window.location.href = "index.html";
-    
+    localStorage.setItem("email", email);
 }
